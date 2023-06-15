@@ -1,9 +1,7 @@
-import { Neucha } from "next/font/google";
 import FooterRedesSociales from "./components/footerRedesSociales";
 import Header from "./components/headerMenu";
+import { fuente } from "./fuente";
 import "./globals.css";
-
-const inter = Neucha({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
   title: "Mandarina Extrema",
@@ -17,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={fuente.className}>
         {/* <!-- "absolute inset-0" will use the whole viewport even in mobile --> */}
         <div className="flex flex-col absolute inset-0">
           <Header />
@@ -26,7 +24,7 @@ export default function RootLayout({
             <main className="max-w-3xl mx-auto">{children}</main>
           </div>
 
-          <div className="mb-6">
+          <div>
             <FooterRedesSociales />
           </div>
         </div>

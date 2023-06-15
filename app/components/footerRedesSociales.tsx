@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="flex justify-center w-screen space-x-2">
+    <div className="flex justify-center w-screen space-x-2 mt-2 mb-6">
       <a href="https://instagram.com/mandarina.extrema">
         <Image
           className="icono-red"
