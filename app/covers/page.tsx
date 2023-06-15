@@ -1,7 +1,9 @@
 const Covers = () => {
   return (
     <div className="mx-10 mt-12">
-      <h1 className="text-2xl mb-4">Covers prácticamente no practicados</h1>
+      <h1 className="text-xl mb-4 font-semibold">
+        Covers prácticamente no practicados
+      </h1>
       <div className="mb-4">
         <p>- Grabados con el celu</p>
         <p>- Con licencias en letra y en general</p>
