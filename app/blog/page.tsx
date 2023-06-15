@@ -33,17 +33,21 @@ const Blog = () => {
 
   return (
     <div>
-      <div className="px-8 py-4 overflow-y-auto">
+      <div className="px-10 py-4 overflow-y-auto">
         {escritos.map((escrito: IEscrito) => {
           const fecha = new Date(escrito.fechaHora);
 
           return (
             <div key={escrito.id} className="">
-              <h1 className="text-2xl mt-8 mb-4">{escrito.titulo}</h1>
+              <h1 className="text-2xl font-semibold mt-8 mb-4">
+                {escrito.titulo}
+              </h1>
               {/* <h1 className="mb-3 text-[9px]">{`${fecha.getDate()}/${
                 fecha.getMonth() + 1
               }/${fecha.getFullYear().toString().slice(-2)}`}</h1> */}
-              <pre className={`${fuente.className} whitespace-pre-wrap`}>
+              <pre
+                className={`${fuente.className} text-lg whitespace-pre-wrap`}
+              >
                 {escrito.cuerpo}
               </pre>
             </div>
