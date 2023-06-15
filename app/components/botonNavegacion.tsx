@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface Props {
   texto: string;
   url: string;
@@ -5,12 +7,13 @@ interface Props {
 
 const BotonNavegacion = (props: Props) => {
   return (
-    <button
+    <Link
       className="px-6 py-2 border-black border"
       onClick={() => console.log("a")}
+      href={props.url}
     >
       {props.texto}
-    </button>
+    </Link>
   );
 };
 
