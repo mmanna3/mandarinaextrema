@@ -64,7 +64,7 @@ function MazoDeCanciones() {
   );
   // Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
   return (
-    <>
+    <div className="flex items-center justify-center mt-64">
       {props.map(({ x, y, rot, scale }, i) => (
         <animated.div
           className="will-change-transform absolute flex items-center justify-center w-72 h-48"
@@ -73,7 +73,7 @@ function MazoDeCanciones() {
         >
           {/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
           <animated.div
-            className="touch-none bg-white will-change-transform"
+            className="touch-none rounded-lg border border-black bg-white will-change-transform w-72"
             {...bind(i)}
             style={{
               transform: interpolate([rot, scale], trans),
@@ -84,7 +84,7 @@ function MazoDeCanciones() {
           </animated.div>
         </animated.div>
       ))}
-    </>
+    </div>
   );
 }
 

@@ -21,7 +21,7 @@ const Body = () => {
   }, [mazoEsVisible]);
 
   return (
-    <div className="flex flex-col items-center justify-center h-[85vh]">
+    <div className="flex flex-col items-center justify-center mt-36">
       <ImagenMandarina
         mandarinaHeridaEsVisible={mandarinaHeridaEsVisible}
         cuandoLaApreten={() => apretarLaMandarina((prev) => !prev)}

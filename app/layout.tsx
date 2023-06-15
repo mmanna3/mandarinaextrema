@@ -18,7 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex flex-col h-screen">
+        {/* <!-- "absolute inset-0" will use the whole viewport even in mobile --> */}
+        <div className="flex flex-col absolute inset-0">
           <Header />
 
           <div className="flex-grow">
