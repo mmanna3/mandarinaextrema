@@ -24,7 +24,7 @@ function ImagenMandarina({
     <Image
       className={`w-300 ${
         mandarinaHeridaEsVisible
-          ? "animate-[temblar_0.4s_infinite]"
+          ? "animate-[bounce_0.8s_linear_0s_2]"
           : "animate-[temblar_2.5s_infinite] hover:animate-[temblar_1s_infinite]"
       }`}
       onClick={() => cuandoLaApreten()}
