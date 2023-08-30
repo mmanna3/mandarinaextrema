@@ -1,14 +1,12 @@
-import FooterRedesSociales from "./components/footerRedesSociales";
-import Header from "./components/headerMenu";
-import { fuente } from "./fuente";
-import "./globals.css";
+import { fuente } from "../fuente";
+// import "./globals.css";
 
 export const metadata = {
   title: "Mandarina Extrema",
   description: "Creado por el mismísimo",
 };
 
-export default function RootLayout({
+export default function LinktreeLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -18,15 +16,15 @@ export default function RootLayout({
       <body className={fuente.className}>
         {/* <!-- "absolute inset-0" will use the whole viewport even in mobile --> */}
         <div className="flex flex-col absolute inset-0">
-          <Header />
+          {/* <Header /> */}
 
-          <div className="flex-grow">
+          <div className="flex-grow bg-gray-950 text-slate-50">
             <main className="max-w-3xl mx-auto">{children}</main>
           </div>
-
+          {/* 
           <div>
             <FooterRedesSociales />
-          </div>
+          </div> */}
         </div>
       </body>
     </html>
