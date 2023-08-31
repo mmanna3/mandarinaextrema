@@ -24,7 +24,7 @@ export default function RootLayout({
             <main className="max-w-3xl mx-auto">{children}</main>
           </div>
 
-          <div>
+          <div className="w-screen">
             <FooterRedesSociales />
           </div>
         </div>
