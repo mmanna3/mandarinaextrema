@@ -1,3 +1,17 @@
+## Ver app en cualquier dispositivo de la LAN
+
+Tirar comando:
+
+```bash
+echo "$(ipconfig getifaddr en0)":4200
+```
+
+---
+
+---
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
