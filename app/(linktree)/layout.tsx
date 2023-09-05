@@ -4,10 +4,10 @@ import TagManager from "react-gtm-module";
 import { fuente } from "../fuente";
 import "./../globals.css";
 
-export const metadata = {
-  title: "Mandarina Extrema",
-  description: "Creado por el mismísimo",
-};
+// export const metadata = {
+//   title: "Mandarina Extrema",
+//   description: "Creado por el mismísimo",
+// };
 
 export default function LinktreeLayout({
   children,
@@ -20,6 +20,9 @@ export default function LinktreeLayout({
 
   return (
     <html lang="en">
+      <head>
+        <title>Mandarina Extrema</title>
+      </head>
       <body className={fuente.className}>
         {/* <!-- "absolute inset-0" will use the whole viewport even in mobile --> */}
         <div className="flex flex-col absolute inset-0">
