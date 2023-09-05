@@ -20,6 +20,7 @@ const Linktree = () => {
       <div className="mt-10">
         <a
           href="https://open.spotify.com/track/5o5nrNtWkMdhDKxAmGJtp5?si=d69f29c52318493f"
+          id="linktree-boton-ultima-cancion"
           className="flex text-xl text-center border border-slate-950 py-4 px-6 mb-5"
         >
           <p>Última canción: Epílogo</p>
@@ -34,6 +35,7 @@ const Linktree = () => {
         <a
           href="https://www.youtube.com/watch?v=wAl7HHFWCIg"
           className="flex text-xl text-center border border-slate-950 py-4 px-6 mb-5"
+          id="linktree-boton-el-mejor-video"
         >
           <p className="ml-10">El mejor video</p>
           <Image
@@ -48,12 +50,14 @@ const Linktree = () => {
           <a
             href="/covers"
             className="flex text-xl text-center border border-slate-950 py-4 px-8 mb-5"
+            id="linktree-boton-covers"
           >
             Covers
           </a>
           <a
             href="/blog"
             className="flex text-xl text-center border border-slate-950 py-4 px-8 mb-5"
+            id="linktree-boton-cuentos"
           >
             Cuentos
           </a>

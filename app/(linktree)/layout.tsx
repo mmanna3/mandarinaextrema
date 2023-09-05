@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import TagManager from "react-gtm-module";
 import { fuente } from "../fuente";
 import "./../globals.css";
 
@@ -11,6 +13,10 @@ export default function LinktreeLayout({
 }: {
   children: React.ReactNode;
 }) {
+  useEffect(() => {
+    TagManager.initialize({ gtmId: "GTM-NZSJXD98" });
+  }, []);
+
   return (
     <html lang="en">
       <body className={fuente.className}>

@@ -3,7 +3,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className="flex justify-center space-x-2 mt-4 mb-6">
-      <a href="https://instagram.com/mandarina.extrema">
+      <a id="footer-instagram" href="https://instagram.com/mandarina.extrema">
         <Image
           className="icono-red"
           src="/images/instagram.png"
@@ -12,7 +12,10 @@ const Footer = () => {
           height="100"
         />
       </a>
-      <a href="https://open.spotify.com/artist/7lo1iNrrVW77oauQUED0tF">
+      <a
+        id="footer-spotify"
+        href="https://open.spotify.com/artist/7lo1iNrrVW77oauQUED0tF"
+      >
         <Image
           className="icono-red spotify"
           src="/images/spotify.png"
@@ -21,7 +24,10 @@ const Footer = () => {
           height="100"
         />
       </a>
-      <a href="https://www.youtube.com/channel/UC1YAsQ6YbvE4lXEKux-U3Yg/featured">
+      <a
+        id="footer-youtube"
+        href="https://www.youtube.com/channel/UC1YAsQ6YbvE4lXEKux-U3Yg/featured"
+      >
         <Image
           className="icono-red"
           src="/images/youtube.png"
