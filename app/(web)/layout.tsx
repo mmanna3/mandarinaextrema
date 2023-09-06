@@ -15,6 +15,8 @@ export default function RootLayout({
     TagManager.initialize({ gtmId: "GTM-NZSJXD98" });
   }, []);
 
+  // quiero un push nuevo porque algo no anduvo en gh-pages
+
   return (
     <html lang="en">
       <head>
