@@ -1,4 +1,5 @@
 "use client";
+import AnalyticsScript from "@/components/analyticsScript";
 import { useEffect } from "react";
 import TagManager from "react-gtm-module";
 import { fuente } from "../fuente";
@@ -21,6 +22,7 @@ export default function LinktreeLayout({
   return (
     <html lang="en">
       <head>
+        <AnalyticsScript />
         <title>Mandarina Extrema</title>
       </head>
       <body className={fuente.className}>

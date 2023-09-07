@@ -1,4 +1,5 @@
 "use client";
+import AnalyticsScript from "@/components/analyticsScript";
 import { useEffect } from "react";
 import TagManager from "react-gtm-module";
 import FooterRedesSociales from "../components/footerRedesSociales";
@@ -15,11 +16,10 @@ export default function RootLayout({
     TagManager.initialize({ gtmId: "GTM-NZSJXD98" });
   }, []);
 
-  // quiero un push nuevo porque algo no anduvo en gh-pages
-
   return (
     <html lang="en">
       <head>
+        <AnalyticsScript />
         <title>Mandarina Extrema</title>
       </head>
       <body className={fuente.className}>
