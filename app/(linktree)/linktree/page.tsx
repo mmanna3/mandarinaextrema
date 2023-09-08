@@ -33,11 +33,12 @@ const Linktree = () => {
           />
         </a>
         <a
-          href="https://www.youtube.com/watch?v=wAl7HHFWCIg"
+          // href="https://www.youtube.com/watch?v=wAl7HHFWCIg" canción pa desayuno
+          href="https://youtu.be/wVUNZTI1U78"
           className="flex text-xl text-center border border-slate-950 py-4 px-6 mb-5"
           id="linktree-boton-el-mejor-video"
         >
-          <p className="ml-10">El mejor video</p>
+          <p className="">Último video: Recoleta</p>
           <Image
             className="ml-3"
             src={"/images/youtube.png"}
