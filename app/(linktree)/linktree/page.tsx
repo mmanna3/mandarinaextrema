@@ -19,11 +19,11 @@ const Linktree = () => {
 
       <div className="mt-10">
         <a
-          href="https://open.spotify.com/track/5o5nrNtWkMdhDKxAmGJtp5?si=d69f29c52318493f"
+          href="https://open.spotify.com/track/5GHOt8TZZeNbE1sdfVGPxp?si=dd22590542dd44cb"
           id="linktree-boton-ultima-cancion"
           className="flex text-xl text-center border border-slate-950 py-4 px-6 mb-5"
         >
-          <p>Última canción: Epílogo</p>
+          <p>Última canción: Ella bailaba</p>
           <Image
             className="ml-3"
             src={"/images/spotify.png"}
