@@ -18,27 +18,35 @@ const Linktree = () => {
       </div>
 
       <div className="mt-10">
-        <a
-          href="https://open.spotify.com/track/5GHOt8TZZeNbE1sdfVGPxp?si=dd22590542dd44cb"
-          id="linktree-boton-ultima-cancion"
-          className="flex text-xl text-center border border-slate-950 py-4 px-6 mb-5"
-        >
-          <p>Última canción: Ella bailaba</p>
-          <Image
-            className="ml-3"
-            src={"/images/spotify.png"}
-            alt="spotify-cancion"
-            width="24"
-            height="1"
-          />
-        </a>
+        <div className="text-xl text-center border border-slate-950 py-4 px-6 mb-5">
+          <a
+            href="https://open.spotify.com/album/65Oy2PHwUzD1SxcI7D9ode?si=7ZBUOtObRVWQavcDHMTNwg"
+            id="linktree-boton-ultima-cancion"
+          >
+            <div className="flex flex-row justify-center">
+              <p>Disco</p>
+              <Image
+                className="ml-3"
+                src={"/images/spotify.png"}
+                alt="spotify-cancion"
+                width="24"
+                height="1"
+              />
+            </div>
+            <div className="text-[0.95rem] mt-1">
+              <p>"Un departamento con paredes verdes"</p>
+            </div>
+          </a>
+        </div>
         <a
           // href="https://www.youtube.com/watch?v=wAl7HHFWCIg" canción pa desayuno
-          href="https://youtu.be/wVUNZTI1U78"
-          className="flex text-xl text-center border border-slate-950 py-4 px-6 mb-5"
+          // Generá el deep link con "linktw.in" (mail dana bar)
+          // O mejor, averiguá cómo hacer tu propio deep link
+          href="https://linktw.in/oLoQNj"
+          className="flex text-xl text-center justify-center border border-slate-950 py-4 px-6 mb-5"
           id="linktree-boton-el-mejor-video"
         >
-          <p className="">Último video: Recoleta</p>
+          <p className="">Video con letras</p>
           <Image
             className="ml-3"
             src={"/images/youtube.png"}
