@@ -8,6 +8,7 @@ const Linktree = () => {
         <div className="flex justify-center">
           <Image
             // className={`border border-slate-950 rounded-full`}
+            className="animate-[temblar_3s_infinite] hover:animate-[temblar_1s_infinite]"
             src={"/images/mandarina.png"}
             alt="mandarina"
             width="180"
