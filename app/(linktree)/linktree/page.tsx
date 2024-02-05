@@ -28,10 +28,10 @@ const Linktree = () => {
             <div className="flex flex-row justify-center">
               <p>Disco</p>
               <Image
-                className="ml-3"
+                className="ml-2 mt-[2px] w-5 h-5"
                 src={"/images/spotify.png"}
                 alt="spotify-cancion"
-                width="24"
+                width="1"
                 height="1"
               />
             </div>
@@ -50,10 +50,10 @@ const Linktree = () => {
         >
           <p className="">Video con letras</p>
           <Image
-            className="ml-3"
+            className="ml-2 mt-[2px] w-5 h-5"
             src={"/images/youtube.png"}
             alt="youtube-video"
-            width="24"
+            width="1"
             height="1"
           />
         </a>
