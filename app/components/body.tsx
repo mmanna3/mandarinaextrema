@@ -11,7 +11,7 @@ const Body = () => {
   return (
     <div className="flex flex-col items-center justify-center mt-24">
       <LinkInclinado
-        className="mr-48 rotate-[-10deg]"
+        className="mr-52 rotate-[-10deg]"
         href="/mazo-de-canciones"
         text="las letras"
       />
@@ -21,7 +21,7 @@ const Body = () => {
         text="instagram"
       />
       <LinkInclinado
-        className="mr-48 mt-8 rotate-[-25deg] underline"
+        className="mr-52 mt-8 rotate-[-25deg] underline"
         href="https://youtu.be/wENBwg6rpeA?si=ytHVtZ2yMKiyzwmn"
         text="el disco"
       />
@@ -30,7 +30,7 @@ const Body = () => {
         href="https://open.spotify.com/artist/7lo1iNrrVW77oauQUED0tF?si=DafNeRv8TNCzI2Eqs9nyFg"
         text="canciones"
       />
-      <div className="my-8">
+      <div className="mb-8 mt-12">
         <ImagenMandarina
           mandarinaHeridaEsVisible={mandarinaHeridaEsVisible}
           cuandoLaApreten={() => {}}
