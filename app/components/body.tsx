@@ -9,7 +9,7 @@ const Body = () => {
   const [apretoLaMandarina, apretarLaMandarina] = useState(false);
 
   return (
-    <div className="flex flex-col items-center justify-center mt-24">
+    <div className="flex flex-col items-center justify-center mt-8">
       <LinkInclinado
         className="mr-52 rotate-[-10deg]"
         href="/mazo-de-canciones"

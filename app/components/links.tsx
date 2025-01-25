@@ -16,7 +16,7 @@ const LinkInclinado: React.FC<LinkInclinadoProps> = ({
   return (
     <Link
       href={href}
-      className={`${fuente.className} whitespace-nowrap items-start text-3xl ml-20 font-bold transform ${className}`}
+      className={`${fuente.className} whitespace-nowrap items-start text-4xl ml-20 font-bold transform ${className}`}
     >
       {text}
     </Link>
