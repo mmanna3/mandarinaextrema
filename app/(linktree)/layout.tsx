@@ -20,27 +20,25 @@ export default function LinktreeLayout({
   }, []);
 
   return (
-    <html lang="en">
-      <head>
-        <AnalyticsScript />
-        <title>Mandarina Extrema</title>
-      </head>
-      <body className={fuente.className}>
-        {/* <!-- "absolute inset-0" will use the whole viewport even in mobile --> */}
-        <div className="flex flex-col absolute inset-0">
-          {/* <Header /> */}
+    <>
+      <AnalyticsScript />
+      {/* "absolute inset-0" ocupará toda la pantalla */}
+      <div
+        className={`flex flex-col absolute inset-0 bg-slate-50 text-slate-950 ${fuente.className}`}
+      >
+        {/* <Header /> */}
 
-          <div className="flex-grow bg-slate-50 text-slate-950">
-            <main className="max-w-3xl mx-auto flex flex-col items-center justify-center mt-12">
-              {children}
-            </main>
-          </div>
-          {/* 
-          <div>
-            <FooterRedesSociales />
-          </div> */}
+        <div className="flex-grow">
+          <main className="max-w-3xl mx-auto flex flex-col items-center justify-center mt-12">
+            {children}
+          </main>
         </div>
-      </body>
-    </html>
+        {/*
+        <div>
+          <FooterRedesSociales />
+        </div>
+        */}
+      </div>
+    </>
   );
 }
