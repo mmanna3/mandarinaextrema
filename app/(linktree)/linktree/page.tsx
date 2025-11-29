@@ -22,11 +22,11 @@ const Linktree = () => {
       <div className="mt-10">
         <div className="text-xl text-center border border-slate-950 py-4 px-6 mb-5">
           <a
-            href="https://open.spotify.com/album/65Oy2PHwUzD1SxcI7D9ode?si=7ZBUOtObRVWQavcDHMTNwg"
+            href="https://open.spotify.com/track/53UNp5BLZR8Ao5XVy0P62x?si=47582aeb65ff49c3"
             id="linktree-boton-ultima-cancion"
           >
             <div className="flex flex-row justify-center">
-              <p>Disco</p>
+              <p className="tracking-wider">Himno de nosotros</p>
               <Image
                 className="ml-2 mt-[2px] w-5 h-5"
                 src={"/images/spotify.png"}
@@ -36,28 +36,34 @@ const Linktree = () => {
               />
             </div>
             <div className="text-[0.95rem] mt-1">
-              <p>"Un departamento con paredes verdes"</p>
+              <p>Nuevo temita</p>
             </div>
           </a>
         </div>
-        <a
-          // href="https://www.youtube.com/watch?v=wAl7HHFWCIg" canción pa desayuno
-          // Generá el deep link con "linktw.in" (mail dana bar)
-          // O mejor, averiguá cómo hacer tu propio deep link
-          href="https://linktw.in/oLoQNj"
-          className="flex text-xl text-center justify-center border border-slate-950 py-4 px-6 mb-5"
-          id="linktree-boton-el-mejor-video"
-        >
-          <p className="">Video con letras</p>
-          <Image
-            className="ml-2 mt-[2px] w-5 h-5"
-            src={"/images/youtube.png"}
-            alt="youtube-video"
-            width="1"
-            height="1"
-          />
-        </a>
-        <div className="flex justify-between">
+        <div className="text-xl text-center border border-slate-950 py-4 px-6 mb-5">
+          <a
+            // href="https://www.youtube.com/watch?v=wAl7HHFWCIg" canción pa desayuno
+            // Generá el deep link con "linktw.in" (mail dana bar)
+            // O mejor, averiguá cómo hacer tu propio deep link
+            href="https://www.passline.com/eventos/para-nos-rock-en-movimiento"
+            id="linktree-boton-el-mejor-video"
+          >
+            <div className="flex flex-row justify-center">
+              <p className="tracking-wider">Entradas 5/12 Palermo</p>
+            </div>
+            <div className="text-[0.95rem] mt-1">
+              <p>Passline (junto a Para Nos)</p>
+            </div>
+            {/* <Image
+              className="ml-2 mt-[2px] w-5 h-5"
+              src={"/images/youtube.png"}
+              alt="youtube-video"
+              width="1"
+              height="1"
+            /> */}
+          </a>
+        </div>
+        {/* <div className="flex justify-between">
           <a
             href="/covers"
             className="flex text-xl text-center border border-slate-950 py-4 px-8 mb-5"
@@ -72,7 +78,7 @@ const Linktree = () => {
           >
             Cuentos
           </a>
-        </div>
+        </div> */}
         <div className="mt-10">
           <FooterRedesSociales />
         </div>
