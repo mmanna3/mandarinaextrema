@@ -1,8 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
+
+import { registrarClic } from "@/actions";
 import FooterRedesSociales from "@/components/footerRedesSociales";
 import Image from "next/image";
+import { useEffect } from "react";
 
 const Linktree = () => {
+  // Registrar entrada a la página cuando el componente se monta
+  useEffect(() => {
+    void registrarClic("/", "entrada-pagina");
+  }, []);
+
   return (
     <div className="">
       <div>
@@ -23,7 +32,10 @@ const Linktree = () => {
         <div className="text-xl text-center border border-slate-950 py-4 px-6 mb-5">
           <a
             href="https://open.spotify.com/track/53UNp5BLZR8Ao5XVy0P62x?si=47582aeb65ff49c3"
-            id="linktree-boton-ultima-cancion"
+            id="boton-ultima-cancion"
+            onMouseDown={() => {
+              void registrarClic("/", "boton-ultima-cancion");
+            }}
           >
             <div className="flex flex-row justify-center">
               <p className="tracking-wider">Himno de nosotros</p>
@@ -46,7 +58,10 @@ const Linktree = () => {
             // Generá el deep link con "linktw.in" (mail dana bar)
             // O mejor, averiguá cómo hacer tu propio deep link
             href="https://www.passline.com/eventos/para-nos-rock-en-movimiento"
-            id="linktree-boton-el-mejor-video"
+            id="boton-passline-paranos"
+            onMouseDown={() => {
+              void registrarClic("/", "boton-passline-paranos");
+            }}
           >
             <div className="flex flex-row justify-center">
               <p className="tracking-wider">Entradas 5/12 Palermo</p>
