@@ -40,7 +40,7 @@ const Linktree = () => {
             </div>
           </a>
         </div>
-        <div className="text-xl text-center border border-slate-950 py-4 px-6 mb-5">
+        {/* <div className="text-xl text-center border border-slate-950 py-4 px-6 mb-5">
           <a
             // href="https://www.youtube.com/watch?v=wAl7HHFWCIg" canción pa desayuno
             // Generá el deep link con "linktw.in" (mail dana bar)
@@ -54,15 +54,15 @@ const Linktree = () => {
             <div className="text-[0.95rem] mt-1">
               <p>Passline (junto a Para Nos)</p>
             </div>
-            {/* <Image
+            <Image
               className="ml-2 mt-[2px] w-5 h-5"
               src={"/images/youtube.png"}
               alt="youtube-video"
               width="1"
               height="1"
-            /> */}
+            />
           </a>
-        </div>
+        </div> */}
         {/* <div className="flex justify-between">
           <a
             href="/covers"
